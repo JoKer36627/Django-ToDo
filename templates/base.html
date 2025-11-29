@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}ToDo Service{% endblock %}</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .task {
+            padding: 10px;
+            border-bottom: 1px solid #e2e2e2;
+        }
+        .task.overdue {
+            background: #ffe5e5;
+        }
+        .category {
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: white;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ToDo List</h1>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
